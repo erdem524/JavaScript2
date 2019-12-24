@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFA500;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.container {
+    width: 75%;
+    background-color: #fff;
+    height: 60%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    height: 405px;
+}
+
+.clear{
+    clear: both;
+
+}
+
+p {
+    margin: 0 8% 0 8%;
+    padding-top:5%;
+    color:#FFA500;
+    font-size: 44px;
+}
+
+#author {
+color: #ffa500;
+float: right;
+margin:2% 8% 2% 0;
+font-size: 33px;
+padding: 20px 0 20px 15px;  
+}
+
+#buttom {
+  color: #fff;
+  background-color: #ffa500;
+  float: right;
+  border: 1px solid;
+  margin-right: 8%;
+  font-size: 24px;
+  padding: 20px 15px 20px 15px;
+  font-family: sans-serif;
+  cursor:pointer;}
+
+#twit-tum {
+  margin-left: 8%;
+}
+
+#twitter {
+    color: #fff;
+    background-color: #FFA500;
+    font-size: 24px;
+    padding: 20px 15px 20px 15px;
+    float: left;
+}
+
+#tumblr {
+    margin-left: 0.3%;
+    float: left;
+    color: #fff;
+    background-color: #ffa500;
+    font-size: 24px;
+    padding: 20px 15px 20px 15px;
+}
+
+.space {
+  background-color: #fff;
+  height: 74px;
+  width: 30%;
+  margin: 0.3%;
+  margin-left: 35%;
+}
+

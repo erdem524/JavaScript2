@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>new</title>
+</head>
+<body>
+  <h1>My Books</h1>
+  <script>
+    const books = [
+      {
+        title: 'The Design of Everyday Things',
+        img: 'https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/2625/9780262525671.jpg',
+        author: 'Don Norman',
+        alreadyRead: false,
+      },
+      {
+        title: 'The Most Human Human',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+        author: 'Brian Christian',
+        alreadyRead: true,
+      },
+    ];
+    document.querySelector('h1').style.color = 'blue';
+    // Iterate through the array of books.
+    for (let i = 0; i < books.length; i++) {
+      // For each book, create a < p > element with the book title and author and append it to the page.
+      let Para = document.createElement('p');
+      let ul = document.createElement('ul');
+      let li = document.createElement('li');
+      document.body.appendChild(Para);
+      //  Use a < ul > and < li > to display the books.
+      Para.appendChild(ul);
+      ul.appendChild(li);
+      let myBook = document.createTextNode(books[i].title + ' by ' + books[i].author);
+      li.appendChild(myBook);
+      // Add an < img > to each book that links to a URL of the book cover.        
+      let bookImg = document.createElement('img');
+      bookImg.src = books[i].img;
+      bookImg.style.width = '100px',
+        li.appendChild(bookImg);
+      // Change the style of the book depending on whether you have read it(green) or not(red).
+      if (books[i].alreadyRead) {
+        li.style.color = 'grey';
+      } else {
+        li.style.color = 'red';
+      }
+    };
+    
+  </script>
+</body>
+
+</html>

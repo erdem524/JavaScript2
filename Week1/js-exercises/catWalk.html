@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body style="overflow: hidden;">
+    <img style="position:absolute;" src="cat-walk.gif" id="img1" />
+    <img src="ani-dancing-cat.gif" id="img2" style="position: fixed; " />
+</body>
+<script>
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("img2");
+    img2.style.display = "none";
+    let distance = -img1.width;
+    let time = 500;
+    setInterval(() => {
+        distance += 10;
+        img1.style.left = `${distance}px`;
+        if (distance >= window.innerWidth) {
+            distance = -img1.width;
+        }
+        if (
+            distance >= (window.innerWidth - img1.width) / 2 &&
+            distance < (window.innerWidth - img1.width) / 2 + 10
+        ) {
+            time = 5000;
+            img2.style.left = `${distance}px`;
+            img2.style.display = "unset";
+            img1.style.display = "none";
+            setTimeout(() => {
+                img1.style.display = "unset";
+                img2.style.display = "none";
+            }, 5000);
+            time = 500;
+        }
+    }, time);
+</script>
+
+</html>

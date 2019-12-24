@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quote.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>quotes</title>
+</head>
+
+<body>
+    <!--main box-->
+    <main class="container">
+        
+        <article>
+            <div class="content">
+            <p id="qoute"><i class='fas fa-quote-left'></i> <span id="quetoDisplay"></span></div>
+            </p> <span id="author"></span>
+            <div class="clear"></div>
+            <!-- twitter and tumblr -->
+            <section>
+                <div id="twit-tum">
+                    <a href="https://twitter.com/"><i id=twitter class="fab fa-twitter"></i></a>
+                    <a href="https://www.tumblr.com/"><i id=tumblr class="fab fa-tumblr"></i></a>
+                </div>
+                <button id="buttom" onclick="newQuote()">New quote</button>
+            </section>
+    </main>
+    <!-- space box -->
+    <div class="space"></div>
+</body>
+<script src="quote.js"></script>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+    .list-item {
+        color:red;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+
+    <ul>
+        <li>Nickname: <span id="nickname"></span></li>
+        <li>Favorite food: <span id="fav-food"></span></li>
+        <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+    <script>
+           
+  document.body.style.fontFamily = 'Arial, sans-serif';     
+  document.body.style.color = 'blue';
+
+  let nick = document.getElementById('nickname');
+nick.innerText = 'Cool';
+  let food = document.getElementById('fav-food');
+food.innerText = 'Ash';
+  let town = document.getElementById('hometown');
+town.innerText = 'Noord';
+
+    //get all li elements
+        let eachLi = document.querySelectorAll('li');
+        //looping through each li element
+        eachLi.forEach(function (element) {
+            //add class
+            element.classList.add('list-item')});    
+
+            
+            let myImage = new Image(300, 200);
+                myImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToKB1xx3R1nSsNckrGzCiDjah-hmK56-vFIGZncA1cXIS-9XQ&s';
+                document.body.appendChild(myImage);
+    </script>
+</body>
+
+</html>
