@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>new</title>
 </head>
+
 <body>
   <h1>My Books</h1>
   <script>
@@ -31,12 +32,12 @@
       let Para = document.createElement('p');
       let ul = document.createElement('ul');
       let li = document.createElement('li');
-      document.body.appendChild(Para);
+      document.body.appendChild(ul);
       //  Use a < ul > and < li > to display the books.
-      Para.appendChild(ul);
       ul.appendChild(li);
+      li.appendChild(Para);
       let myBook = document.createTextNode(books[i].title + ' by ' + books[i].author);
-      li.appendChild(myBook);
+      Para.appendChild(myBook);
       // Add an < img > to each book that links to a URL of the book cover.        
       let bookImg = document.createElement('img');
       bookImg.src = books[i].img;
@@ -49,7 +50,7 @@
         li.style.color = 'red';
       }
     };
-    
+
   </script>
 </body>
 
