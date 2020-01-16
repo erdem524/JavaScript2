@@ -25,13 +25,20 @@
 
 body {
   --red: #a50d0d;
-
+  margin: 0;
   font-family: 'Righteous';
-
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: #1e555c;
   color: white;
 }
 
+h1 {
+  font-size: 55px;
+}
 .button {
   border: 0;
   outline: none;
@@ -41,6 +48,9 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  color: greenyellow;
+}
 .button::-moz-focus-inner {
   border: 0;
 }
@@ -48,51 +58,23 @@ body {
 .setting {
   padding-left: 36px;
   padding-right: 16px;
+  font-size: 25px;
 }
 
 .timer {
+  width: 320px;
   display: inline-block;
-  padding: 20px 60px;
-  border: 7px solid #13353a;
+  padding: 10px;
+  border: 10px solid #13353a;
   border-radius: 50px;
 }
 
 .timer__title {
-  margin-top: 0;
+  margin-top: 15px;
+  font-size: 33px;
 }
 
 .timer__value {
   font-family: Digital;
-  font-size: 50px;
-}
-
-.timer.is-expiring {
-  color: var(--red);
-}
-
-.attribution {
-  font-family: 'Share Tech Mono', sans;
-
-  color: var(--red);
-}
-
-.attribution a.developer {
-  display: block;
-
-  text-decoration: none;
-
-  color: #00264d;
-}
-
-/* Layout */
-
-body {
-  margin: 0;
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
+  font-size: 40px;
 }

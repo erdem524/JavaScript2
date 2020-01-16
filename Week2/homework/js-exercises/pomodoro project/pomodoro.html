@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="pomodoro.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <container>
+      <h1>Pomodoro Clock</h1>
+      <!-- setting -->
+      <div class="setting">
+        <h2>Session Length</h2>
+        <p id="Session-length"></p>
+        <button onclick="decrement()" class="button">
+          <i class="fa fa-arrow-down fa-2x"></i>
+        </button>
+        <span id="length"></span>
+        <button onclick="increment()" class="button">
+          <i class="fa fa-arrow-up fa-2x"></i>
+        </button>
+      </div>
+      <!-- setting ends -->
+      <div>
+        <div>
+          <div class="mt timer ">
+            <h3 class="timer__title">Session</h3>
+            <div id="show" class="timer__value">
+              <p id="timeshow">
+                <span id="h1">0</span>
+                <span id="h2">0</span>
+                :
+                <span id="s1">0</span>
+                <span id="s2">0</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="mt">
+            <button onclick="start()" class="button">
+              <i class="fa fa-play fa-2x"></i>
+            </button>
+            <button onclick="stop()" class="button">
+              <i class="fa fa-pause fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </container>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
