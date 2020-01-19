@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body{
+    font-family:Robotto;
+    background: linear-gradient(to left, #AD133A, #1F050B);
+    color: black;
+}
+
+#container{
+   height: 550px;
+   width: 360px;
+   margin: 100px auto;
+   background:white;
+   box-shadow: 0 0 3px #1F050B;
+   border-radius: 20px;
+}
+
+h1{
+background: #1F050B;
+color: white;
+padding: 10px 100px;
+font-size: 18px;
+border-radius: 20px 20px 0 0;
+}
+
+form label {
+  display: block;
+  margin: 25px 15px;
+  font-weight: bold;
+}
+
+
+form input,
+form select {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+form input[type='text'] {
+  width: 90px;
+}
+
+#bill{
+    font-size: 15px;
+    background-color: white;
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+}
+
+#totalpeople{
+    font-size: 15px;
+    background-color: white;
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 20px;
+}
+
+#service {
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 13px 13px 20px 20px;
+}
+
+button {
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  margin: 20px auto;
+  background:#AD133A;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+}
+
+
+button:hover {
+  background: #1F050B; 
+}
+
+
+#totaltip {
+  font-size: 25px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#totaltip small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+
+
+
+
